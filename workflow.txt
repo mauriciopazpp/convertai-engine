@@ -1,0 +1,4 @@
+1 - Ler o pdf.
+2 - Identificar e pegar os elementos do pdf (texto, imagem, tabela, imagem).
+3 - Pegar o conteudo, POR PAGINA, para que a IA analise pagina a pagina.
+4 -

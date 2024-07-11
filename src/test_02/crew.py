@@ -1,11 +1,25 @@
+import os
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+from langchain_google_genai import ChatGoogleGenerativeAI
+
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Uncomment the following line to use an example of a custom tool
 # from test_02.tools.custom_tool import MyCustomTool
 
 # Check our tools documentations for more information on how to use them
 # from crewai_tools import SerperDevTool
+
+# em todos os agentes que você tiver na sua equipe
+# adicione a linha llm=llm conforme exemplo abaixo:
+
+useGoogleGemini = ChatGoogleGenerativeAI(
+    model="gemini-pro",
+    verbose=True,
+    temperature=0.5,
+    google_api_key=GOOGLE_API_KEY
+)
 
 @CrewBase
 class Test02Crew():
@@ -25,7 +39,8 @@ class Test02Crew():
 	def reporting_analyst(self) -> Agent:
 		return Agent(
 			config=self.agents_config['reporting_analyst'],
-			verbose=True
+			verbose=True,
+			llm=useGoogleGemini
 		)
 
 	@task
