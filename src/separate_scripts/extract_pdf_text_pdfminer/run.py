@@ -1,5 +1,6 @@
 import argparse
 from modules.extractAndProcessPage import extract_and_process_pages  # type: ignore
+from pprint import pprint
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Process PDF pages.')
@@ -25,7 +26,9 @@ def main():
 
     if args.debug:
         for key, value in pages.items():
-            print(f'{key}: {value},')
+            pprint(f'{key}: {value},')
+    else:
+        print(pages)
 
 if __name__ == "__main__":
     main()
