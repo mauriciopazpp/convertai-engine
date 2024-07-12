@@ -25,10 +25,9 @@ def main():
     )
 
     if args.debug:
-        for key, value in pages.items():
-            pprint(f'{key}: {value},')
+        pprint(pages)
     else:
-        print(pages)
+        print(pages) ## Dados prontos.
 
 if __name__ == "__main__":
     main()

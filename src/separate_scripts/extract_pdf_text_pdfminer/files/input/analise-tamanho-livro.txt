@@ -1,0 +1,8 @@
+Ao observar o PDF La_revolution-1-15.pdf, parece que o livro possui um formato menor em termos de dimensões físicas, semelhante a um livro de bolso ou uma edição compacta. As páginas possuem um layout que sugere que não é um livro grande ou de capa dura típico.
+
+Baseando-se nas observações e considerando que muitos livros antigos e de tamanho compacto têm dimensões aproximadas de 21 cm de altura e 14 cm de largura, a altura da página padrão de 29,7 cm mencionada (formato A4) pode ser ajustada para refletir melhor o tamanho real do livro.
+
+Aqui estão as dimensões aproximadas que podem ser usadas:
+
+Altura da página: 21 cm (ajustado de 29,7 cm)
+Tamanho do cabeçalho e rodapé: 1,76 cm parece razoável, mas pode ser ajustado para 1 cm para refletir melhor o tamanho compacto do livro.

@@ -37,7 +37,7 @@ def process_element(pages, page_number, element, page_height_pt, header_margin_c
         #'element': element,
         #'type_element': type(element).__name__,
         #'type_object': type(element),
-        # 'font_size': get_font_size(element),
+        #'font_size': get_font_size(element),
         'text_with_styles': text_with_styles,
         #'alignment': text_alignment,
         'page_width': page_width,

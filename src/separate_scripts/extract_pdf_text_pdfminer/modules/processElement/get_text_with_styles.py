@@ -1,4 +1,5 @@
 from pdfminer.layout import LTChar, LTTextBox, LTTextLine
+from modules.processElement.get_text import get_text # type: ignore
 
 def get_text_with_styles(element):
     text_styles = []
@@ -18,7 +19,7 @@ def get_text_with_styles(element):
     elif isinstance(element, LTChar):
         fontname = element.fontname.lower()
         text_styles.append({
-            'text': element.get_text(),
+            'text': get_text(element),
             'bold': 'bold' in fontname,
             'italic': 'italic' in fontname or 'oblique' in fontname,
             'font_family': fontname,
