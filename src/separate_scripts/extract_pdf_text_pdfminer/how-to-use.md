@@ -16,5 +16,4 @@ pip install pdfminer.six
 
 2. Coloque o pdf na mesma pasta, altere o nome da variavel, e use o comando para executar
 
-python extract_elements_from_pdf.py start_page=1
-
+python run.py start_page=1
